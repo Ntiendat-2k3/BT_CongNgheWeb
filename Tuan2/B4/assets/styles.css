@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -102,15 +103,16 @@ nav ul li a:hover {
 main {
     width: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 main img {
     width: 6%;
-    height: 850px;
+    height: 1000px;
 }
 
 .content {
-    width: 70%;
+    width: 60%;
     background-color: white;
 }
 
@@ -140,7 +142,7 @@ main img {
 }
 
 .post-content {
-    padding-left: 15px;
+    padding-left: 30px;
 }
 
 .post-content h2 {
@@ -154,6 +156,7 @@ main img {
     margin-top: 25px;
     color: #666;
     line-height: 1.6;
+    padding-left: 10px;
 }
 
 .post-content .desc a {
@@ -167,7 +170,7 @@ main img {
 }
 
 aside {
-    width: 24%;
+    width: 34%;
     background-color: #fff;
 }
 
@@ -197,6 +200,50 @@ aside {
     color: #67ba2c;
     font-size: 0.9em;
 }
+
+.categories ul li a:hover, .extra-links ul li a:hover {
+    text-decoration: underline;
+} 
+
+
+.calendar h3 {
+    font-family: "EB Garamond", cursive;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.calendar-table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+    width: 10%;
+    text-align: center;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+}
+
+.calendar-table th {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.calendar-table td {
+    color: #333;
+}
+
+.calendar-table td:hover {
+    background-color: #f0f0f0;
+}
+
+.calendar-table td.empty {
+    background-color: #f9f9f9;
+}
+
 
 footer {
     background-color: #88b04b;
