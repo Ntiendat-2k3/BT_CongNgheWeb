@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
         dropdown.classList.remove("active")
       );
 
-      const notAvailableLinks = document.querySelectorAll('a.not-available');
-      notAvailableLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-          event.preventDefault(); 
-          alert('Bài tập này hiện chưa hoàn thành. Vui lòng quay lại sau!');
-        });
-      });
+      // const notAvailableLinks = document.querySelectorAll('a.not-available');
+      // notAvailableLinks.forEach(link => {
+      //   link.addEventListener('click', function(event) {
+      //     event.preventDefault(); 
+      //     alert('Bài tập này hiện chưa hoàn thành. Vui lòng quay lại sau!');
+      //   });
+      // });
     });
   });
 
