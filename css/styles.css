@@ -191,20 +191,6 @@ body {
   transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
-a.not-available {
-  color: #6c757d;
-  pointer-events: none; 
-  cursor: not-allowed;
-  position: relative;
-}
-
-a.not-available::after {
-  content: ' 🔒';
-  position: absolute;
-  right: -20px;
-}
-
-
 @media (max-width: 1024px) {
   .sidebar {
     width: 220px;
