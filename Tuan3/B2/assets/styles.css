@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FACFCF;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #420000; 
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header nav ul li a {
+    color: #FACFCF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #420000;
+    background-color: #9D6F68;
+    border-radius: 4px;
+}
+
+.menu {
+    background-color: #420000;
+    width: 220px;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.menu h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.menu a {
+    color: #9D6F68;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    transition: color,padding 0.3s ease;
+}
+
+.menu a:hover {
+    color: white;
+    padding-left: 10px;
+    background-color: #b88179;
+    border-radius: 5px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 40px 20px;
+}
+
+.content h1 {
+    color: #420000;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    color: #420000;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.footer {
+    background-color: #FACFCF;
+    color: #420000;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
