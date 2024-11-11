@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #171717;
+}
+img {
+  display: block;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 750px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.sidebar {
+  position: absolute;
+  top: 12%;
+  left: 35px;
+  width: 200px;
+  background: transparent;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar-logo {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.nav-menu{
+  position: absolute;
+  top: 100%;
+  left: 22%;
+  width: 100%;
+}
+
+.nav-menu ul {
+  list-style: none;
+}
+
+.nav-menu .menu-item {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.nav-menu .menu-item:hover {
+  transform: scale(1.05);
+}
+
+.nav-menu .menu-item a {
+  position: absolute;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.nav-menu .menu-item a:hover {
+  color: #FFD700;
+}
+
+.main-content {
+  position: absolute;
+  top: 40px;
+  left: 280px;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.intro-section {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.content-image {
+  float: left;
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.intro,
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.intro {
+  font-weight: 500;
+  font-style: italic;
+  color: #007BFF;
+}
+
+.description {
+  font-weight: 400;
+}
+
+.description a {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.services-section {
+  margin-top: 20px;
+}
+
+.services-section h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.services-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.service-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.services-list a {
+  text-decoration: none;
+  color: orangered;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.services-list a:hover {
+  color: #007BFF;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  width: calc(100% - 40px);
+  background: transparent;
+  padding: 10px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.social-icons a {
+  margin: 0 8px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.copy-right {
+  font-size: 12px;
+  color: #fff;
+}
+
+.copy-right a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.copy-right a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 15px;
+  }
+
+  .intro-section {
+    flex-direction: column;
+  }
+
+  .content-image {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .services-list li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-menu .menu-item {
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .main-content h1 {
+    font-size: 20px;
+  }
+
+  .services-section h2 {
+    font-size: 18px;
+  }
+
+  .services-list a {
+    font-size: 12px;
+  }
+
+  .copy-right {
+    font-size: 10px;
+  }
+}
