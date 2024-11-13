@@ -72,4 +72,4 @@ git branch
 ```
 
 ## Liên hệ
-email: nguyentiendatg2003@gmail.com
+Email: nguyentiendatg2003@gmail.com
