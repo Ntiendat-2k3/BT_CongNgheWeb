@@ -18,7 +18,7 @@
 
 ## Giới thiệu
 
-**BT_CongNgheWeb** là một dự án thực hành về công nghệ web, tập trung chủ yếu vào **HTML** và **CSS**. Dự án bao gồm các bài tập và ví dụ giúp người học nâng cao kỹ năng thiết kế giao diện web và áp dụng vào các dự án thực tế.
+**BT_CongNgheWeb** là các bài tập thực hành về công nghệ web, tập trung chủ yếu vào **HTML** và **CSS**. Các bài tập và ví dụ giúp người học nâng cao kỹ năng thiết kế giao diện web và áp dụng vào các dự án thực tế.
 
 
 ## Yêu cầu hệ thống
