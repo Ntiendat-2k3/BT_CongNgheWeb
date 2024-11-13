@@ -35,5 +35,41 @@
 
 ```bash
 git clone https://github.com/Ntiendat-2k3/BT_CongNgheWeb.git
+```
 
+## Hướng dẫn clone branch
 
+Nếu bạn muốn làm việc với một branch cụ thể, bạn có thể làm theo các bước sau:
+
+1. Clone repository:
+   
+```bash
+git clone https://github.com/Ntiendat-2k3/BT_CongNgheWeb.git
+```
+
+2. Chuyển vào thư mục dự án:
+
+```bash
+cd BT_CongNgheWeb
+```
+
+3. Liệt kê các branch có sẵn trên remote:
+
+```bash
+git branch -r
+```
+
+4. Checkout branch mà bạn muốn làm việc (ví dụ: feature-branch):
+
+```bash
+git checkout -b feature-branch origin/feature-branch
+```
+
+5. Xác nhận rằng bạn đang ở đúng branch:
+
+```bash
+git branch
+```
+
+## Liên hệ
+email: nguyentiendatg2003@gmail.com
