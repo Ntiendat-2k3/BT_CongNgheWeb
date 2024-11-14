@@ -6,15 +6,13 @@
 ## Mục lục
 
 - [Giới thiệu](#giới-thiệu)
-- [Cấu trúc thư mục](#cấu-trúc-thư-mục)
 - [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
 - [Cài đặt](#cài-đặt)
   - [Clone Repository](#clone-repository)
 - [Sử dụng](#sử-dụng)
 - [Hướng dẫn tạo branch](#hướng-dẫn-tạo-branch)
-- [Đóng góp](#đóng-góp)
 - [Liên hệ](#liên-hệ)
-- [Giấy phép](#giấy-phép)
+
 
 ## Giới thiệu
 
