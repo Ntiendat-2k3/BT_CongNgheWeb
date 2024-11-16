@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -24,12 +28,19 @@
           <li class="active" data-week="tuan1">BT Tuần 1</li>
           <li data-week="tuan2">BT Tuần 2</li>
           <li data-week="tuan3">BT Tuần 3</li>
+          <li data-week="tuan4">BT Tuần 4</li>
         </ul>
       </aside>
 
       <main class="main-content">
         <!-- Tuần 1 -->
-        <section class="week-content" id="tuan1">
+        <section
+          class="week-content"
+          id="tuan1"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <h2>BT Tuần 1</h2>
           <ul class="exercise-list">
             <li>
@@ -431,10 +442,42 @@
             </li> -->
           </ul>
         </section>
+
+        <!-- Tuần 4 -->
+        <section class="week-content" id="tuan4" style="display: none">
+          <h2>BT Tuần 4</h2>
+          <ul class="exercise-list">
+            <li>
+              <div class="exercise-title">
+                Bài 1 <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="dropdown-content">
+                <a
+                  href="https://ntiendat-2k3.github.io/BT_CongNgheWeb/Tuan4/B1/"
+                  target="_blank"
+                  >View Giao Diện</a
+                >
+                <a
+                  href="https://github.com/ntiendat-2k3/BT_CongNgheWeb/tree/main/Tuan4/B1"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
     </div>
 
     <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true, // chỉ 1 lần khi cuộn
+      });
+    </script>
   </body>
 </html>
