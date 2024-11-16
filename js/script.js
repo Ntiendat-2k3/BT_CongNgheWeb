@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // const notAvailableLinks = document.querySelectorAll('a.not-available');
       // notAvailableLinks.forEach(link => {
       //   link.addEventListener('click', function(event) {
-      //     event.preventDefault(); 
+      //     event.preventDefault();
       //     alert('Bài tập này hiện chưa hoàn thành. Vui lòng quay lại sau!');
       //   });
       // });
@@ -54,5 +54,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
+  });
+
+  window.addEventListener("load", () => {
+    const loadingOverlay = document.getElementById("loading-overlay");
+    if (loadingOverlay) {
+      loadingOverlay.classList.add("hidden");
+      setTimeout(() => {
+        loadingOverlay.style.display = "none";
+      }, 500);
+    }
   });
 });
