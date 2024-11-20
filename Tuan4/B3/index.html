@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quản lý Sản phẩm - Sộp pe</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/126/126515.png"
+    />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Toastify -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <!-- Confirm -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1>
+          <img src="assets/imgs/logo.jpg" alt="Logo" />
+          Quản lý sản phẩm - Sộp pe
+        </h1>
+      </div>
+    </header>
+
+    <img id="loadingImg" src="../../hamster-gif.gif" alt="Loading..." />
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="add-product-form">
+        <h2 id="formTitle">Thêm sản phẩm</h2>
+        <div class="form-group">
+          <label for="productName">Tên sản phẩm</label>
+          <input type="text" id="productName" placeholder="Nhập tên sản phẩm" />
+        </div>
+        <div class="form-group">
+          <label for="productPrice">Giá sản phẩm (VNĐ)</label>
+          <input
+            type="number"
+            id="productPrice"
+            placeholder="Nhập giá sản phẩm"
+          />
+        </div>
+        <div class="form-group">
+          <label for="productQuantity">Số lượng</label>
+          <input
+            type="number"
+            id="productQuantity"
+            placeholder="Nhập số lượng"
+          />
+        </div>
+        <div class="form-group">
+          <label for="productImage">Hình ảnh sản phẩm</label>
+          <input type="file" id="productImage" accept="image/*" />
+        </div>
+
+        <div class="form-group">
+          <img
+            id="imagePreview"
+            src=""
+            alt="Xem trước hình ảnh"
+            style="
+              display: none;
+              max-width: 100%;
+              height: auto;
+              margin-top: 10px;
+            "
+          />
+        </div>
+        <button id="addProductButton">Thêm sản phẩm</button>
+      </div>
+
+      <div class="product-list">
+        <h2>Danh sách sản phẩm</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Hình ảnh</th>
+              <th>Tên sản phẩm</th>
+              <th>Giá</th>
+              <th>Số lượng</th>
+              <th>Thành tiền</th>
+              <th>Thời gian</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="productTableBody"></tbody>
+        </table>
+      </div>
+
+      <div class="total-value">
+        <h2>Tổng giá trị hàng hóa: <span id="totalValue">0</span> VNĐ</h2>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>© 2024 Quản lý sản phẩm - Sộp pe</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
