@@ -13,7 +13,7 @@ function displayTasks(filter = "") {
 
   if (filteredTasks.length === 0) {
     const li = document.createElement("li");
-    li.textContent = "Không có công việc nào để hiển thị.";
+    li.textContent = "No task!.";
     li.style.textAlign = "center";
     li.style.color = "#888888";
     tasksList.appendChild(li);
