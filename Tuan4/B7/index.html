@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Todo List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="New task..." />
+        <select id="prioritySelect">
+          <option value="low">lower</option>
+          <option value="medium">normal</option>
+          <option value="high">high</option>
+        </select>
+        <button id="addTaskButton" title="Add Task">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="controls-section">
+        <input type="text" id="searchInput" placeholder="Search tasks..." />
+        <button id="sortButton" title="Sort">
+          <i class="fas fa-sort-alpha-down"></i>
+        </button>
+      </div>
+
+      <div class="tasks-section">
+        <h2>Tasks:</h2>
+        <ul id="tasksList"></ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

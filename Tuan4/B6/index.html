@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực Hành Mảng - Danh Sách Tên</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Thực Hành Mảng - Danh Sách Tên</h1>
+
+      <div class="input-section">
+        <input type="text" id="nameInput" placeholder="Nhập tên mới..." />
+        <button id="addButton" title="Thêm Tên">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="button-group">
+        <button
+          id="removeFirstButton"
+          class="remove-button"
+          title="Xóa Tên Đầu"
+        >
+          <i class="fas fa-arrow-up"></i>
+        </button>
+        <button
+          id="removeLastButton"
+          class="remove-button"
+          title="Xóa Tên Cuối"
+        >
+          <i class="fas fa-arrow-down"></i>
+        </button>
+      </div>
+
+      <div class="delete-specific-section">
+        <input
+          type="text"
+          id="deleteNameInput"
+          placeholder="Nhập tên cần xóa..."
+        />
+        <button id="deleteNameButton" title="Xóa Tên">
+          <i class="fas fa-trash"></i>
+        </button>
+      </div>
+
+      <div class="result-section">
+        <h2>Danh Sách Tên:</h2>
+        <ul id="nameList"></ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 25px;
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+}
+
+.input-section, .delete-specific-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.input-section input, .delete-specific-section input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-section input:focus, .delete-specific-section input:focus {
+  border-color: #4CAF50;
+}
+
+button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.remove-button {
+  background-color: #f44336;
+}
+
+.remove-button:hover {
+  background-color: #d32f2f;
+}
+
+.result-section {
+  margin-top: 25px;
+}
+
+.result-section h2 {
+  font-family: 'EB Garamond', serif;
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Danh sách tên */
+#nameList {
+  list-style-type: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#nameList li {
+  background-color: #f0f8ff;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #555555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+#nameList li:hover {
+  background-color: #e0f7fa;
+}
+
+.delete-item-button {
+  background-color: #ff5722;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-item-button:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+.delete-item-button:active {
+  transform: scale(1);
+}

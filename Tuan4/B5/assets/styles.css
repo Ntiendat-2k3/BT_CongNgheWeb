@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-section {
+  margin: 20px 0;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #218838;
+}
+
+.result-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.result {
+  width: 48%;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.result h2 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.result p {
+  font-size: 18px;
+  color: #000;
+}
