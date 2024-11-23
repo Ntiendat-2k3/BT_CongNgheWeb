@@ -158,15 +158,15 @@ h1 {
 }
 
 #tasksList li.high {
-  border-left: 5px solid #e74c3c; /* Đỏ */
+  border-left: 5px solid #e74c3c;
 }
 
 #tasksList li.medium {
-  border-left: 5px solid #f1c40f; /* Vàng */
+  border-left: 5px solid #f1c40f;
 }
 
 #tasksList li.low {
-  border-left: 5px solid #2ecc71; /* Xanh lá */
+  border-left: 5px solid #2ecc71;
 }
 
 #tasksList li.completed {

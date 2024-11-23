@@ -1,6 +1,6 @@
 const notyf = new Notyf();
 
-let names = ["An", "Bình", "Chi", "Dũng"];
+let names = ["An", "Bình", "Chi", "Dũng", "Hòa"];
 
 function displayNames() {
   const nameList = document.getElementById("nameList");
@@ -44,6 +44,7 @@ function deleteNameByValue(name) {
     return;
   }
 
+  // Xóa
   for (let i = indices.length - 1; i >= 0; i--) {
     names.splice(indices[i], 1);
   }
@@ -61,7 +62,7 @@ document.getElementById("addButton").addEventListener("click", function () {
     names.push(nameInput); // Thêm vào cuối mảng
     displayNames();
     notyf.success(`Đã thêm tên "${nameInput}" vào danh sách.`);
-    document.getElementById("nameInput").value = "";
+    document.getElementById("nameInput").value = ""; // reset field
   } else {
     notyf.error("Vui lòng nhập tên trước khi thêm.");
   }

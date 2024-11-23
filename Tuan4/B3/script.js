@@ -183,6 +183,7 @@ function loadProductToForm(product) {
   document.getElementById("addProductButton").textContent = "Cập nhật sản phẩm";
 }
 
+// Thay đổi ảnh san phẩm
 document.getElementById("productImage").addEventListener("change", function () {
   const imageInput = document.getElementById("productImage");
   const imagePreview = document.getElementById("imagePreview");

@@ -2,6 +2,7 @@ const notyf = new Notyf();
 
 // Tạo mảng danh sách các công việc từ localStorage
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+console.log("🚀 ~ tasks:", tasks);
 
 function displayTasks(filter = "") {
   const tasksList = document.getElementById("tasksList");
@@ -141,7 +142,6 @@ function addTask(taskName, priority) {
   notyf.success(`Đã thêm công việc: "${taskName}"`);
 }
 
-// Xóa công việc
 function confirmDeleteTask(taskId) {
   Swal.fire({
     title: "Bạn có chắc chắn?",
@@ -159,6 +159,7 @@ function confirmDeleteTask(taskId) {
   });
 }
 
+// Xóa công việc
 function deleteTask(taskId) {
   const taskIndex = tasks.findIndex((task) => task.id === taskId);
   if (taskIndex !== -1) {
@@ -271,7 +272,7 @@ document.getElementById("addTaskButton").addEventListener("click", function () {
   }
 
   addTask(taskInput, prioritySelect);
-  document.getElementById("taskInput").value = "";
+  document.getElementById("taskInput").value = ""; // reset input
 });
 
 // Enter
