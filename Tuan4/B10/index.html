@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực Hành JavaScript - 5 Bài Tập</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <!-- Bài tập 1: Thay đổi nội dung của một phần tử -->
+    <section id="exercise1">
+      <h2>Bài tập 1: Thay đổi nội dung của một phần tử</h2>
+      <p id="paragraph1">Đây là đoạn văn ban đầu.</p>
+      <button onclick="changeContent()">Thay đổi nội dung</button>
+    </section>
+
+    <!-- Bài tập 2: Đếm số lần nhấp vào nút -->
+    <section id="exercise2">
+      <h2>Bài tập 2: Đếm số lần nhấp vào nút</h2>
+      <button onclick="countClicks()">Nhấp vào tôi</button>
+      <p>Số lần nhấp: <span id="clickCount">0</span></p>
+    </section>
+
+    <!-- Bài tập 3: Thêm phần tử mới vào danh sách -->
+    <section id="exercise3">
+      <h2>Bài tập 3: Thêm phần tử mới vào danh sách</h2>
+      <input type="text" id="newItem" placeholder="Nhập phần tử mới" />
+      <button onclick="addItem()">Thêm vào danh sách</button>
+      <ul id="itemList">
+        <li>Phần tử 1</li>
+        <li>Phần tử 2</li>
+        <li>Phần tử 3</li>
+      </ul>
+    </section>
+
+    <!-- Bài tập 4: Thay đổi màu nền của trang -->
+    <section id="exercise4">
+      <h2>Bài tập 4: Thay đổi màu nền của trang</h2>
+      <button onclick="changeBackground('red')">Đỏ</button>
+      <button onclick="changeBackground('green')">Xanh</button>
+      <button onclick="changeBackground('yellow')">Vàng</button>
+    </section>
+
+    <!-- Bài tập 5: Ẩn và hiện một phần tử -->
+    <section id="exercise5">
+      <h2>Bài tập 5: Ẩn và hiện một phần tử</h2>
+      <p id="toggleParagraph">Đây là đoạn văn để ẩn hoặc hiện.</p>
+      <button onclick="hideParagraph()">Ẩn</button>
+      <button onclick="showParagraph()">Hiện</button>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
