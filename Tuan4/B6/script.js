@@ -17,7 +17,8 @@ function displayNames() {
     deleteBtn.setAttribute("title", "Xóa Tên");
 
     deleteBtn.addEventListener("click", function () {
-      const nameToDelete = this.getAttribute("data-name");
+      const nameToDelete = this.getAttribute("data-name"); // lấy giá trị của data-name là name
+      console.log("🚀 ~ nameToDelete:", nameToDelete);
       deleteNameByValue(nameToDelete);
     });
 

@@ -163,6 +163,7 @@ function confirmDeleteTask(taskId) {
 function deleteTask(taskId) {
   const taskIndex = tasks.findIndex((task) => task.id === taskId);
   if (taskIndex !== -1) {
+    // true
     const removedTask = tasks.splice(taskIndex, 1)[0];
     updateLocalStorage();
     displayTasks(document.getElementById("searchInput").value.trim());
