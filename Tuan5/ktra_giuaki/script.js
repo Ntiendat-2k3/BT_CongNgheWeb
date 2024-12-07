@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function showHome() {
   showLoading(true);
   setTimeout(() => {
-    // Giả lập thời gian tải
     document.getElementById("main-content").innerHTML = `
       <h2>Trang chủ</h2>
       <p>Chào mừng đến với hệ thống quản lý sinh viên.</p>
